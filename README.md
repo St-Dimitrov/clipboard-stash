@@ -59,4 +59,4 @@ Web Service that allows to paste and share clipboard content.
 
 ## ToDo
 1. Well, finish the project for once...
-2. Do my own unique documentation for it - initial one inspired by a fellow classmate[r1oga](https://github.com/r1oga/clipstash)
+2. Do my own unique documentation for it - initial one inspired by a fellow classmate [r1oga](https://github.com/r1oga/clipstash)
