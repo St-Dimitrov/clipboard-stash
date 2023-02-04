@@ -43,7 +43,7 @@ impl From<crate::service::ask::GetClip> for GetClip {
         Self {
             shortcode: req.shortcode.into_inner()
         
-        }
+        } 
     }
 }
 
@@ -90,4 +90,16 @@ pub struct UpdateClip {
     pub(in crate::data) title: Option<String>,
     pub(in crate::data) expires: Option<i64>,
     pub(in crate::data) password: Option<String>,
+}
+
+impl From<crate::service::ask::UpdateClip> for UpdateClip {
+    fn from(req: crate::service::ask::UpdateClip) -> Self {
+        Self {
+            content: req.content.into_inner(),
+            title: req.title.into_inner(),
+            expires: req.expires.into_inner().map(|time| time.timestamp()),
+            password: req.password.into_inner(),
+            shortcode: ShortCode::default().into(),
+        }
+    }
 }
