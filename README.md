@@ -51,7 +51,7 @@ Web Service that allows to paste and share clipboard content.
     ```
 2. Create DB and run initial migration:
    ```commandline
-    sqlx database setup --source "db/migrations"
+    sqlx database setup (--source "db/migrations" TODO)
     ``` 
 
 ## Credit
