@@ -97,7 +97,7 @@ pub async fn get_clip(
 }
 
 pub fn routes() -> Vec<rocket::Route> {
-    rocket::routes![home, get_clip]
+    rocket::routes![home, get_clip, new_clip]
 }
 
 pub mod catcher {

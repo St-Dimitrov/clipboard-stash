@@ -38,3 +38,28 @@ textarea,input[type="text"] {
     display: flex !important;
     flex-direction: column;
 }
+
+.is-two-thirds .message .message-body {
+    resize: vertical;
+    overflow: auto;
+    min-height: 12em;
+    max-height: 80em;
+}
+
+.is-two-thirds {
+    resize: vertical !important;
+    overflow: auto !important;
+    min-height: 12em;
+    max-height: 90em;
+}
+/* 
+#clip-content {
+    resize: vertical;
+    height: max-content;
+} */
+
+.textarea:not([rows]) {
+    max-height: 80em !important;
+    min-height: 8em;
+    resize: none;
+}
